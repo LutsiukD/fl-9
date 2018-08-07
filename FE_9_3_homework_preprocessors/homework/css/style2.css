@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #EEF3FA;
+  font-family: serif; }
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: #EFEFEF;
+  padding: 0 100px 0 100px; }
+
+header {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-end; }
+
+.logo img {
+  width: 350px;
+  height: auto; }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 100%;
+  height: 50px;
+  border-top: 1px solid #CFD8DC;
+  border-bottom: 1px solid #CFD8DC;
+  text-transform: uppercase;
+  margin-bottom: 38px; }
+  nav a {
+    text-decoration: none;
+    color: #FC5830; }
+    nav a:hover {
+      color: #f53304; }
+
+.toolbar {
+  text-align: right; }
+  .toolbar input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #FC5830;
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent; }
+    .toolbar input::placeholder {
+      color: #FC5830; }
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start; }
+  .post-list article {
+    width: 48%;
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 15px; }
+  .post-list img {
+    width: 100%; }
+  .post-list div {
+    padding: 8px; }
+    .post-list div .post-description {
+      color: #BDBFCE;
+      padding: 10px;
+      border-bottom: 1px solid #CFD8DC;
+      margin-bottom: 10px;
+      font-size: 0.8em; }
+    .post-list div h3 {
+      text-transform: uppercase;
+      color: #617D8A; }
+    .post-list div p {
+      color: #757575;
+      line-height: 1.6em;
+      margin-bottom: 1.2em; }
+
+.about {
+  margin-top: 60px; }
+  .about h1 {
+    text-align: right;
+    text-transform: uppercase;
+    color: #FC5830; }
+  .about p {
+    margin-bottom: 1.5em;
+    color: #757575;
+    line-height: 1.5em; }
+  .about img {
+    width: 100%; }
+
+.contact-form {
+  margin-top: 50px;
+  text-align: right; }
+  .contact-form h1, .contact-form h4 {
+    color: #FC5830; }
+  .contact-form h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: #CFD8DC; }
+    .contact-form form input::placeholder,
+    .contact-form form textarea::placeholder {
+      color: #CFD8DC; }
+  .contact-form form #submit_button {
+    width: 200px;
+    height: 40px;
+    background: #FC5830;
+    color: white;
+    text-transform: uppercase;
+    border: transparent; }
+    .contact-form form #submit_button:hover {
+      background: #f53304; }
+
+footer {
+  margin-bottom: 10px; }
+  footer span {
+    font-size: 0.8em;
+    color: #757575; }
+
+/*# sourceMappingURL=style2.css.map */

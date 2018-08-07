@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+	background: $pageBackground;
+	font-family:$fontFamily;
+}
+.main-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: $contentBackground;
+	padding: 0 100px 0 100px;
+	
+}
+header {
+		display: flex;
+		align-content: space-between;
+		align-items: flex-end;
+			
+	}
+.logo{
+		img{
+			width: 350px;
+			height: auto;
+		}
+}	
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex: 1 100%;
+	height: 50px;
+	border-top: 1px solid $borderColor;
+	border-bottom: 1px solid $borderColor;
+	text-transform: uppercase;
+    margin-bottom: 38px;
+	a {
+		text-decoration: none;
+		color: $mainColor;
+		&:hover {
+        color: darken($mainColor, 10);
+      }
+	}
+	
+}	
+.toolbar {
+	text-align: right;
+	input {
+		width: 200px;
+		height: 40px;
+		border: 1px solid $mainColor;
+		margin: 20px 0;
+		padding: 10px;
+		background: transparent;
+		&::placeholder{
+			color: $mainColor;
+		}
+	}
+}
+.post-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+    
+    article {
+    	width: 48%;
+    	background: $postBackground;
+    	padding: 10px;
+    	margin-bottom: 15px;
+    }
+
+	img {
+		width: 100%;
+	}
+    div {
+    	padding: 8px;
+    	.post-description {
+			color: $postDescriptionColor;
+			padding: 10px;	
+			border-bottom: 1px solid $borderColor;
+			margin-bottom: 10px;
+			font-size: 0.8em;
+		}
+		h3{
+			text-transform: uppercase;
+			color: $cardheaderColor;
+		}
+		p{
+			 color: $paragraphColor;
+	         line-height: 1.6em;
+	         margin-bottom: 1.2em;
+		}
+    }
+	
+}	
+.about {
+	margin-top: 60px;
+	h1{
+		text-align: right;
+		text-transform: uppercase;
+		color: $mainColor;
+	}
+	p{
+		margin-bottom: 1.5em;
+    	color: $paragraphColor;
+   		line-height: 1.5em;
+	}
+	img {
+		width: 100%;	
+	}
+}
+.contact-form {
+	margin-top: 50px;
+	text-align: right;
+	h1,h4 {
+		color: $mainColor;
+	}
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	form {
+		input, 
+		textarea {
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 10px 15px;
+			color: $formColor;
+			&::placeholder {
+        		color: $formColor;
+      		}
+		}
+		#submit_button {
+			width: 200px;
+			height: 40px;
+			background: $mainColor;
+			color: white;
+			text-transform: uppercase;
+			border: transparent;
+			&:hover{
+				background: darken($mainColor, 10);
+			}
+		}
+	}
+}	
+footer{
+	margin-bottom: 10px;
+	span{
+		font-size: 0.8em;
+		color: $paragraphColor;
+	}
+}
