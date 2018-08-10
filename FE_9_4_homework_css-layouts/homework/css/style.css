@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-/*	background: #F3F3F3;*/
 	font-weight: 400;
 }
 
@@ -20,8 +19,7 @@ h2 {
 .header {
 	position: relative;
 	height: 740px;
-    background: #6f6f6f url("../img/apples.jpg") center center no-repeat;
- /*   object-fit: cover;*/
+        background: #6f6f6f url("../img/apples.jpg") center center no-repeat;
 }
 
 .top-nav {
