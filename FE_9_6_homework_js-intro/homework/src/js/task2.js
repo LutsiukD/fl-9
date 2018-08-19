@@ -1,7 +1,7 @@
 // Your code goes here
-const sideA = parseFloat(prompt("Enter side A: ", "0"));
-const sideB = parseFloat(prompt("Enter side B: ", "0"));
-const angle = parseFloat(prompt("Enter angle: ", "0"));
+const sideA = parseFloat(prompt('Enter side A: ', '0'));
+const sideB = parseFloat(prompt('Enter side B: ', '0'));
+const angle = parseFloat(prompt('Enter angle: ', '0'));
 let output;
 const maxAngle = 180;
 const degree=Math.PI/maxAngle*angle;
